@@ -25,6 +25,8 @@ include "functions.php";
 printArr($numbers);
 
 
+$largestnum = largest($numbers);
+echo $largestnum;
 
 
 
