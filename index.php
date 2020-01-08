@@ -16,4 +16,31 @@ error_reporting(E_ALL);
 <meta charset="UTF-8">
 <title>Pair Program 1</title>
 <h1>Pair Program 1 </h1>
+<?php
+$numbers = array(7,9,8,9,8,8,6);
+
+
+
+function printArr($array)
+{
+    $count = count($array);
+    for ($i = 0; $i < $count; $i++) {
+        echo ($array[$i]) . "<br>";
+
+    }
+}
+printArr($numbers);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
