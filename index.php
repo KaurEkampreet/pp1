@@ -21,14 +21,7 @@ $numbers = array(7,9,8,9,8,8,6);
 
 
 
-function printArr($array)
-{
-    $count = count($array);
-    for ($i = 0; $i < $count; $i++) {
-        echo ($array[$i]) . "<br>";
-
-    }
-}
+include "functions.php";
 printArr($numbers);
 
 
