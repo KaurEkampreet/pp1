@@ -24,3 +24,7 @@ function largest($array)
     return $max;
 }
 
+function removeDups($array) {
+    return array_unique($array);
+}
+

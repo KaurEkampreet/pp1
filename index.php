@@ -7,26 +7,30 @@
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
+
+include "functions.php";
 ?>
 
 <!DOCTYPE html>
-<body lang="en">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+</head>
 <body>
-<meta charset="UTF-8">
 <title>Pair Program 1</title>
 <h1>Pair Program 1 </h1>
 <?php
 $numbers = array(7,9,8,9,8,8,6);
 
-
-
-include "functions.php";
 printArr($numbers);
 
 
-$largestnum = largest($numbers);
-echo $largestnum;
+
+echo "<p>The largest is ".largest($numbers)."</p>";
+echo "<p>The array without duplicates is "."</p>";
+
+echo"<p>".printArr(removeDups($numbers))."</p>";
+
 
 
 
