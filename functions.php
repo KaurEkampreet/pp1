@@ -28,3 +28,16 @@ function removeDups($array) {
     return array_unique($array);
 }
 
+function distribution($array) {
+    sort($array);
+    $arrayAssoc = array();
+    foreach ($array as $arr) {
+        if ( array_key_exists($arr, $arrayAssoc)) {
+            $arrayAssoc[$arr]++;
+        }
+        else {
+            $arrayAssoc[$arr] = 1;
+        }
+    }
+    return $arrayAssoc;
+}

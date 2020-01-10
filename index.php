@@ -25,11 +25,17 @@ $numbers = array(7,9,8,9,8,8,6);
 printArr($numbers);
 
 
-
 echo "<p>The largest is ".largest($numbers)."</p>";
 echo "<p>The array without duplicates is "."</p>";
 
-echo"<p>".printArr(removeDups($numbers))."</p>";
+echo "<p>".printArr(removeDups($numbers))."</p>";
+
+echo "<p>The distribution of the array is "."</p>";
+echo "<p>".var_dump(distribution($numbers))."</p>";
+
+?>
+</body>
+</html>
 
 
 
